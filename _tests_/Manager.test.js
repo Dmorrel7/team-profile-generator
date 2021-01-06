@@ -4,12 +4,12 @@ const Manager = require("../lib/Manager")
 
 test('creates manager object', () => 
 {
-    manager = new Manager('AJ', '25', 'ajcuddeback@gmail.com', '52');
+    manager = new Manager('Dalton', '29', 'daltonmorrel7@gmail.com', '77');
 
-    expect(manager.name).toBe('AJ');
-    expect(manager.id).toBe('25');
-    expect(manager.email).toBe('ajcuddeback@gmail.com');
-    expect(manager.officeNumber).toBe('52');
+    expect(manager.name).toBe('Dalton');
+    expect(manager.id).toBe('29');
+    expect(manager.email).toBe('daltonmorrel7@gmail.com');
+    expect(manager.officeNumber).toBe('77');
 });
 
 test('managers office number', () => 
