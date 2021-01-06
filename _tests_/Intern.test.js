@@ -6,7 +6,6 @@ test('creates intern object', () =>
 {
     const intern = new Intern('Dalton', '29', 'daltonmorrel7@gmail.com', 'UCF');
 
-
     expect(intern.name).toBe('Dalton');
     expect(intern.id).toBe('29');
     expect(intern.email).toBe('daltonmorrel7@gmail.com');

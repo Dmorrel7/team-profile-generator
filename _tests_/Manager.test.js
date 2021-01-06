@@ -1,10 +1,9 @@
-  
 const { test, expect } = require("@jest/globals")
 const Manager = require("../lib/Manager")
 
 test('creates manager object', () => 
 {
-    manager = new Manager('Dalton', '29', 'daltonmorrel7@gmail.com', '77');
+    const manager = new Manager('Dalton', '29', 'daltonmorrel7@gmail.com', '77');
 
     expect(manager.name).toBe('Dalton');
     expect(manager.id).toBe('29');
