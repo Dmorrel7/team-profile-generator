@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+    background-color: #e95757;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+
+}
+
+ul, .list-group {
+    padding: 25px 15px 25px 15px;
+    background-color: aliceblue;
+}
+
+.card {
+    box-shadow: 7px 7px grey;
+    margin: 30px;
+}
+
+.card-body {
+    background-color: blue;
+    color: white;
+    width: inherit;
+}
