@@ -22,5 +22,5 @@ test('managers role', () =>
 {
     const manager = new Manager('Dalton', '29', 'daltonmorrel7@gmail.com', '77');
 
-    expect(manager.getRole()).toBe("Role: Manager")
+    expect(manager.getRole()).toBe("Manager")
 })

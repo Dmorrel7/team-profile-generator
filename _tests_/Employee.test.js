@@ -1,39 +1,36 @@
 const { test, expect } = require("@jest/globals");
 const Employee = require("../lib/Employee");
 
-test('Creates employee object', () => 
+test('expect employee to be an instance', ()=> 
 {
-    const employee = new Employee('Dalton', '29', 'daltonmorrel7@gmail.com');
-
-    expect(employee.name).toBe('Dalton');
-    expect(employee.id).toBe('29');
-    expect(employee.email).toBe('daltonmorrel7@gmail.com');
+    const employee = new Employee()
+    expect(typeof(employee)).toBe('object');
 });
 
-test('gets employee name', () => 
+test('expect employee name to be same as constructor argument', ()=> 
 {
-    const employee = new Employee('Dalton', '29', 'daltonmorrel7@gmail.com');
+    const name = 'Dalton'
+    const employee = new Employee(name)
+    expect(employee.name).toBe(name)
+})
 
-    expect(employee.getName()).toEqual(expect.any(String));
-});
-
-test('gets employee id', () => 
+test('expect employee id to be the same as constructor argument', ()=>
 {
-    const employee = new Employee('Dalton', '29', 'daltonmorrel7@gmail.com');
+    const id = 24
+    const employee = new Employee('Dalton', id)
+    expect(employee.id).toBe(id)
+})
 
-    expect(employee.getId()).toEqual(expect.any(String));
-});
-
-test('gets employee email', () => 
+test('expect employee email to be the same as constructor argument', ()=>
 {
-    const employee = new Employee('Dalton', '29', 'daltonmorrel7@gmail.com');
+    const email = 'daltonmorrel7@gmail.com'
+    const employee = new Employee('Dalton', 29, email)
+    expect(employee.email).toBe(email)
+})
 
-    expect(employee.getEmail()).toEqual(expect.any(String));
-});
-
-test('gets the employee role', () => 
+test('expect to get employee name via get name method', ()=> 
 {
-    const employee = new Employee('Dalton', '29', 'daltonmorrel7@gmail.com');
-
-    expect(employee.getRole()).toBe("Role: Employee");
-});
+    const name = 'Dalton'
+    const employee = new Employee(name)
+    expect(employee.getName()).toBe(name)
+})
